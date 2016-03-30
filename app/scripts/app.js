@@ -34,6 +34,9 @@ angular
         controller: 'ResumeCtrl',
         controllerAs: 'resume'
       })
+      .when('#skills',{
+        templateUrl: '#skills'
+      })
       .otherwise({
         redirectTo: '/'
       });
