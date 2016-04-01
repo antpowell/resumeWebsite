@@ -101,25 +101,25 @@ body {
   .jumbotron {
     @include card(2);
     color: white;
-    height: 475px;
+    margin-bottom:0;
   }
   .jumbotron1{
     position: relative;
     background-color: #2F8AB7;
     z-index: 5;
+    height: 475px;
   }
   .jumbotron2{
     background-color: #335C81;
     position: relative;
-    margin-top: -35px;
     z-index: 4;
+    height: 475px;
   }
   .jumbotron3{
     background-color: #0B3954;
-    position: relative;
-    margin-top: -35px;
     z-index: 3;
     height: auto;
+    margin-bottom: 0;
     .skills{
       a{
         text-decoration: none;
@@ -128,7 +128,6 @@ body {
       }
       }
     }
-
     .mock-ups{
 
       img{
@@ -137,6 +136,15 @@ body {
         max-width: 500px;
       }
     }
+
+  }
+  .jumbotron4{
+    background-color: whitesmoke;
+    z-index: -2;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    color: #2F4858;
 
   }
   .roll-over-imgs{

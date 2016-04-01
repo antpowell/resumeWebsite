@@ -8,7 +8,7 @@
  * Controller of the anthonyPowellcomApp
  */
 angular.module('anthonyPowellcomApp')
-  .controller('MainCtrl', function() {
+  .controller('MainCtrl','$anchorScroll', function() {
     var ctx = $('#canvas').get(0).getContext('2d');
 
     //pie chart data
@@ -62,4 +62,8 @@ angular.module('anthonyPowellcomApp')
       legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
     };
     var skillchart = new Chart(ctx).Pie(data, options);
+
+    $scope.gotoSkills=function(){
+      $location.hash('skills')
+    }
   });
