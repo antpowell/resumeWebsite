@@ -73,165 +73,214 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-  /* Remove the padding we set earlier */
-  .footer,
-  .header,
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+//@media screen and (min-width: 768px) {
+.container {
+  max-width: 730px;
+}
 
+/* Remove the padding we set earlier */
+.footer,
+.header,
+.marketing {
+  padding-left: 0;
+  padding-right: 0;
+}
 
+/* Space out the masthead */
+.header {
+  margin-bottom: 30px;
+}
 
-  // -------------------------------User Edit-------------------------------
-  html{
-    //height: 1804.480px;
-  }
-  .navbar {
-    height: 35px !important;
-    min-height: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    @include card(1);
-    .nav > li a {
-      height: 35px;
-      font-size: 1em;
-      flex-grow: 1;
-      // padding: 0px;
-    }
-  }
-  .jumbotron {
-    @include card(2);
-    color: white;
-    margin-bottom: 0;
-  }
-  .jumbotron1 {
-    position: relative;
-    background-color: #2F8AB7;
-    z-index: 5;
-    height: 475px;
-  }
-  .jumbotron2 {
-    background-color: #335C81;
-    position: relative;
-    z-index: 4;
-    height: 475px;
-  }
-  .jumbotron3 {
-    position: relative;
-    background-color: #0B3954;
-    z-index: 3;
-    height: auto;
-    margin-bottom: 125px;
-    .skills {
-      a {
-        text-decoration: none;
-        &:hover {
-          color: inherit;
-        }
-      }
-    }
-    .mock-ups {
+/* Remove the bottom border on the jumbotron for visual effect */
+.jumbotron {
+  border-bottom: 0;
+}
 
-      img {
-        display: block;
-        margin: auto;
-        max-width: 500px;
-      }
-    }
+//}
 
+// -------------------------------User Edit-------------------------------
+html {
+  //height: 1804.480px;
+}
+
+.navbar {
+  height: 35px !important;
+  min-height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  @include card(1);
+  .nav > li a {
+    height: 35px;
+    font-size: 1em;
+    flex-grow: 1;
+    // padding: 0px;
   }
-  .jumbotron4 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px 0;
-    background: url(../images/nodejs_debugsession.png) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 130px;
-    z-index: 0;
-    overflow: hidden;
-    color: #2F4858;
+}
 
-    .container{
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(245,245,245,0.8);
+.jumbotron {
+  @include card(2);
+  color: white;
+  margin-bottom: 0;
+}
 
-    }
+.jumbotron1 {
+  position: relative;
+  background-color: #2F8AB7;
+  z-index: 5;
+  height: 475px;
+}
 
-  }
+.jumbotron2 {
+  background-color: #335C81;
+  position: relative;
+  z-index: 4;
+  height: 475px;
   .roll-over-imgs {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    overflow: hidden;
-    z-index: 5;
-    opacity: 0.4;
-    width: 100%;
-    height: 475px;
-    top: 0;
-    div {
-      margin: 0;
-      padding: 0;
-    }
+    height: 100%;
+    transition: all 0.8s;
     img {
-      opacity: 0.1;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      transition: all 0.3s;
+
+    }
+  }
+}
+
+.jumbotron3 {
+  position: relative;
+  background-color: #0B3954;
+  z-index: 3;
+  height: auto;
+  margin-bottom: 125px;
+  .skills {
+    a {
+      text-decoration: none;
       &:hover {
-        opacity: 1;
-        visibility: visible;
+        color: inherit;
       }
     }
   }
-  .hero {
-    position: relative;
-    top: -100px;
-    //z-index: 2;
-  }
-  a {
-    color: inherit;
-    &:hover {
-      color: #a1a1a1;
+  .mock-ups {
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 500px;
     }
-  }
-  .down-arrow {
-    position: relative;
-    top: 15px;
-  }
-  canvas {
-    width: 100%;
-    height: auto;
-  }
-  .progress-bar-github {
-    background-color: #222222;
-  }
-  .progress-bar-excel {
-    background-color: #007133;
   }
 
 }
+
+.jumbotron4 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background: url(../images/nodejs_debugsession.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 130px;
+  z-index: 0;
+  overflow: hidden;
+  color: #2F4858;
+
+  .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.8);
+
+  }
+
+}
+
+.roll-over-imgs {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+  opacity: 0.4;
+  width: 100%;
+  height: 475px;
+  top: 0;
+  div {
+    margin: 0;
+    padding: 0;
+  }
+  #class {
+    background: url(../images/_DSC2339_2.png) no-repeat top center;
+    filter: opacity(0.2);
+    background-size: cover;
+  }
+  #code {
+    background: url(../images/code4good0741.jpg) no-repeat top center;
+    filter: opacity(0.2);
+    background-size: cover;
+  }
+  #combat {
+    background: url(../images/_DSC0240.png) no-repeat top center;
+    filter: opacity(0.2);
+    background-size: cover;
+  }
+  img {
+    opacity: 0.1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  top: -100px;
+  //z-index: 2;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: #a1a1a1;
+  }
+}
+
+.down-arrow {
+  position: relative;
+  top: 15px;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+.progress-bar-github {
+  background-color: #222222;
+}
+
+.progress-bar-excel {
+  background-color: #007133;
+}
+
+/* Responsive: iphones 4' */
+//@media screen and (max-width: 972px) {
+//  .jumbotron2{
+//    height: auto;
+//    .roll-over-imgs{
+//      background: url(../images/code4good0741.jpg) no-repeat top center;
+//      background-size: cover;
+//      filter: opacity(0.4);
+//  }
+//
+//  }
+//}
