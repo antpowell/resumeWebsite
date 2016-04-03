@@ -1,23 +1,27 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
- // bower:scss
- @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
- // endbower
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
 @import "./materialShadow.scss";
-body{
+body {
   height: 100%;
 }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-*{
+
+* {
   font-family: Lato, sans-serif;
 }
+
 body {
   padding: 0;
 }
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .footer,
 .header,
@@ -25,6 +29,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -37,15 +42,18 @@ body {
     padding-bottom: 19px;
   }
 }
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
+
 .container-narrow > hr {
   margin: 30px 0;
 }
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -55,6 +63,7 @@ body {
     padding: 14px 24px;
   }
 }
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
@@ -62,6 +71,7 @@ body {
     margin-top: 28px;
   }
 }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -82,8 +92,14 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+
+
   // -------------------------------User Edit-------------------------------
-  .navbar{
+  html{
+    //height: 1804.480px;
+  }
+  .navbar {
     height: 35px !important;
     min-height: 25px;
     display: flex;
@@ -91,7 +107,7 @@ body {
     align-items: center;
     justify-content: center;
     @include card(1);
-    .nav > li a{
+    .nav > li a {
       height: 35px;
       font-size: 1em;
       flex-grow: 1;
@@ -101,36 +117,37 @@ body {
   .jumbotron {
     @include card(2);
     color: white;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
-  .jumbotron1{
+  .jumbotron1 {
     position: relative;
     background-color: #2F8AB7;
     z-index: 5;
     height: 475px;
   }
-  .jumbotron2{
+  .jumbotron2 {
     background-color: #335C81;
     position: relative;
     z-index: 4;
     height: 475px;
   }
-  .jumbotron3{
+  .jumbotron3 {
+    position: relative;
     background-color: #0B3954;
     z-index: 3;
     height: auto;
-    margin-bottom: 0;
-    .skills{
-      a{
+    margin-bottom: 125px;
+    .skills {
+      a {
         text-decoration: none;
-        &:hover{
-        color: inherit;
-      }
+        &:hover {
+          color: inherit;
+        }
       }
     }
-    .mock-ups{
+    .mock-ups {
 
-      img{
+      img {
         display: block;
         margin: auto;
         max-width: 500px;
@@ -138,16 +155,34 @@ body {
     }
 
   }
-  .jumbotron4{
-    background-color: whitesmoke;
-    z-index: -2;
-    width: auto;
-    height: auto;
+  .jumbotron4 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    background: url(../images/nodejs_debugsession.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130px;
+    z-index: 0;
     overflow: hidden;
     color: #2F4858;
 
+    .container{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(245,245,245,0.8);
+
+    }
+
   }
-  .roll-over-imgs{
+  .roll-over-imgs {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -157,23 +192,23 @@ body {
     width: 100%;
     height: 475px;
     top: 0;
-    div{
+    div {
       margin: 0;
       padding: 0;
     }
-    img{
+    img {
       opacity: 0.1;
       object-fit: cover;
-      width:100%;
+      width: 100%;
       height: 100%;
       transition: all 0.3s;
-      &:hover{
+      &:hover {
         opacity: 1;
         visibility: visible;
       }
     }
   }
-  .hero{
+  .hero {
     position: relative;
     top: -100px;
     //z-index: 2;
@@ -184,18 +219,18 @@ body {
       color: #a1a1a1;
     }
   }
-  .down-arrow{
+  .down-arrow {
     position: relative;
     top: 15px;
   }
-  canvas{
+  canvas {
     width: 100%;
     height: auto;
   }
-  .progress-bar-github{
+  .progress-bar-github {
     background-color: #222222;
   }
-  .progress-bar-excel{
+  .progress-bar-excel {
     background-color: #007133;
   }
 
