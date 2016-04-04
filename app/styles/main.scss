@@ -213,6 +213,8 @@ html {
     margin: 0;
     padding: 0;
   }
+
+  //Background images jumbotron 2
   #class {
     background: url(../images/_DSC2339_2.png) no-repeat top center;
     filter: opacity(0.2);
@@ -271,7 +273,12 @@ canvas {
 .progress-bar-excel {
   background-color: #007133;
 }
-
+#PF-mockup{
+  transform: translate(-600px, 0);
+}
+#BIT-mockup{
+  transform: translate(600px, 0);
+}
 /* Responsive: iphones 4' */
 //@media screen and (max-width: 972px) {
 //  .jumbotron2{
