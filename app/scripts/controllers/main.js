@@ -24,8 +24,6 @@ angular.module('anthonyPowellcomApp')
       $('#BIT-mockup').css({
         'transform':'translate(-'+windowScroll/50+'%, 0px)'
       });
-
-
     });
 
   });
