@@ -188,7 +188,7 @@ html {
   overflow: hidden;
   color: #2F4858;
 
-  .container {
+  .container  {
     position: absolute;
     top: 0;
     right: 0;
@@ -277,20 +277,28 @@ canvas {
   background-color: #007133;
 }
 #PF-mockup{
-  transform: translate(-600px, 0);
+  -webkit-animation-duration: 1.3s;
+  -moz-animation-duration: 1.3s;
+  -o-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  transform: translate(150px, 0);
 }
 #BIT-mockup{
-  transform: translate(600px, 0);
+  -webkit-animation-duration: 1.3s;
+  -moz-animation-duration: 1.3s;
+  -o-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  transform: translate(-150px, 0);
 }
 /* Responsive: iphones 4' */
-//@media screen and (max-width: 972px) {
-//  .jumbotron2{
-//    height: auto;
-//    .roll-over-imgs{
-//      background: url(../images/code4good0741.jpg) no-repeat top center;
-//      background-size: cover;
-//      filter: opacity(0.4);
-//  }
-//
-//  }
-//}
+@media screen and (max-width: 972px) {
+  .jumbotron2{
+    height: auto;
+    .roll-over-imgs{
+      background: url(../images/code4good0741.jpg) no-repeat top center;
+      background-size: cover;
+      filter: opacity(0.4);
+  }
+
+  }
+}
