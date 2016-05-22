@@ -258,6 +258,10 @@ a {
   &:hover {
     color: #a1a1a1;
   }
+  &:visited{
+
+  }
+
 }
 
 .down-arrow {
@@ -268,6 +272,10 @@ a {
 canvas {
   width: 100%;
   height: auto;
+}
+.progress{
+  height: 25px;
+  background: rgba(8, 98, 143, 0.45)
 }
 
 .progress-bar-github {
