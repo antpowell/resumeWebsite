@@ -33,6 +33,10 @@ angular
         templateUrl: 'views/resume.html',
         controller: 'ResumeCtrl',
         controllerAs: 'resume'
+      }).when('/projects', {
+        templateUrl: 'views/projects.html',
+        controller: 'ResumeCtrl',
+        controllerAs: 'resume'
       })
       .when('#skills',{
         templateUrl: '#skills'
