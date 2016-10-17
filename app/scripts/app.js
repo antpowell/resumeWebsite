@@ -25,7 +25,7 @@ angular
         controllerAs: 'main'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
+        templateUrl: 'views/tempProject.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
@@ -36,7 +36,7 @@ angular
       }).when('/projects', {
         templateUrl: 'views/projects.html',
         controller: 'ResumeCtrl',
-        controllerAs: 'resume'
+        controllerAs: 'project'
       })
       .when('#skills',{
         templateUrl: '#skills'
