@@ -156,8 +156,16 @@ body {
   .roll-over-imgs {
     height: 100%;
     transition: all 0.8s;
+    z-index: -1;
     img {
 
+    }
+  }
+  .marketing{
+    a:hover{
+      text-decoration: none;
+      color: rgba(134,0,55,1);
+      font-weight: 600;
     }
   }
 }
