@@ -4,7 +4,25 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 @import "./materialShadow.scss";
 @import "../../bower_components/hover/css/hover-min.css";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700);
+/* latin-ext */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700);
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 body {
   height: 100%;
   font-weight: 400;
@@ -70,7 +88,9 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 0 0;
+  padding-left: 0;
+  padding-right: 0;
   p + h4 {
     margin-top: 28px;
   }
@@ -85,10 +105,6 @@ body {
 /* Remove the padding we set earlier */
 .footer,
 .header,
-.marketing {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 /* Space out the masthead */
 .header {
@@ -105,21 +121,6 @@ body {
 // -------------------------------User Edit-------------------------------
 
 
-//.navbar {
-//  //height: 40px !important;
-//  min-height: 25px;
-//  display: flex;
-//  justify-content: space-between;
-//  //align-items: center;
-//  //justify-content: center;
-//  @include card(1);
-//  .nav > li a {
-//    height: 35px;
-//    font-size: 1em;
-//    flex-grow: 1;
-//    // padding: 0px;
-//  }
-//}
 
 .jumbotron {
   @include card(2);
@@ -137,14 +138,6 @@ body {
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  //:hover{
-  //
-  //  -webkit-transform: rotate(20deg);
-  //  -moz-transform: rotate(20deg);
-  //  -ms-transform: rotate(20deg);
-  //  -o-transform: rotate(20deg);
-  //  transform: rotate(20deg);
-  //}
 
 }
 
