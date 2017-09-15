@@ -47,10 +47,10 @@ body {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .footer,
 .header,
-.marketing {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+//.marketing {
+//  padding-left: 15px;
+//  padding-right: 15px;
+//}
 
 /* Custom page header */
 .header {
@@ -145,14 +145,11 @@ body {
   background-color: #335C81;
   position: relative;
   z-index: 4;
-  height: 475px;
+  height: 500px;
   .roll-over-imgs {
     height: 100%;
     transition: all 0.8s;
     z-index: -1;
-    img {
-
-    }
   }
   .marketing{
     a:hover{
