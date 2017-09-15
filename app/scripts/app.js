@@ -38,8 +38,10 @@ angular
         controller: 'ResumeCtrl',
         controllerAs: 'project'
       })
-      .when('#skills',{
-        templateUrl: '#skills'
+      .when('/policy/privacy',{
+        templateUrl: 'views/privacy_policy.html',
+        controller: 'ResumeCtrl',
+        controllerAs: 'policy'
       })
       .otherwise({
         redirectTo: '/'
